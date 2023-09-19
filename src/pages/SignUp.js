@@ -9,7 +9,7 @@ const SignUp = () => {
     const [accountType, setAccountType] = useState("user");
 
     return (
-        <div className='bg-richblack-900 h-screen flex item-center justify-center pt-10 '>
+        <div className='bg-richblack-900  flex item-center justify-center  pt-10 '>
             <div className='text-richblack-100'>
 
                 <div className='flex bg-richblack-800 overflow-y-hidden p-1 gap-x-1 my-6 ml-24 rounded-full max-w-max'>

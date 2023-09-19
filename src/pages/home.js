@@ -1,33 +1,112 @@
 import React from 'react'
 import dis from "../assets/dis.jpg"
+import map from "../assets/map.png"
+import navigation from "../assets/navigation.png"
+import chatbot from "../assets/chatbot.png"
+import feedback from "../assets/feedback.png"
+import hospital from "../assets/hospital.png"
+import chatAgency from "../assets/chatAgency.png"
+import ndrf from "../assets/ndrf.png"
 import {Link} from "react-router-dom"
 
 const home = () => {
     return (
-        <div className='bg-richblack-900 flex h-screen space-x-10 py-[140px] '>
 
-            <div className='text-richblack-100 max-w-2xl ml-24'>
-                <h3 className='font-bold text-3xl text-yellow-500'>Welcome to DigiRescue -</h3>
-                <h3 className='font-bold text-3xl text-orange-600 '>Your Digital Lifeline in Emergencies</h3>
+        <div>
+            <div className='bg-richblack-900 flex space-x-10 py-[140px]'>
 
-                <div className='mt-6 text-justify text-xl italic space-y-6'>
-                    <p>In a world where disasters, both natural and man-made, can strike unexpectedly, having a reliable lifeline is paramount.
-                        Introducing DigiRescue, your trusted companion during times of crisis.</p>
+                <div className='text-richblack-100 max-w-2xl ml-24'>
+                    <h3 className='font-bold text-3xl text-yellow-500'>Welcome to DigiRescue -</h3>
+                    <h3 className='font-bold text-3xl text-orange-600 '>Your Digital Lifeline in Emergencies</h3>
 
-                    <p>DigiRescue is a cutting-edge application designed to revolutionize the way rescue agencies coordinate and respond to emergencies.
-                        With the power of technology, we're bringing together the forces of compassion, expertise, and rapid response, all at your fingertips.</p>
+                    <div className='mt-6 text-justify text-xl italic space-y-6'>
+                        <p> In a world where disasters, both natural and man-made, can strike unexpectedly, having a reliable lifeline is paramount.
+                            Introducing DigiRescue, your trusted companion during times of crisis. DigiRescue is your trusted partner during crises, 
+                            providing seamless communication, location services using <span className='text-green-600'>GPS</span> and direct access to 
+                            the agencies using  <span className='text-green-600'>Chat Box Assistance</span> dedicated to your safety</p>
 
+                        <p>When you're in trouble, every second counts. Our <span className='text-green-600'>location services</span> help emergency responders reach you swiftly,
+                             ensuring a faster and more effective response. In times of distress, DigiRescue bridges the gap between you and emergency agencies. Communicate directly
+                              with National Disaster Response Force (NDRF) and State Disaster Response Force (SDRF) personnel using <span className='text-green-600'>Chat With Agencies</span>.</p>
+
+                    </div>
+                    
                 </div>
-                
-            </div>
-            
-            <div className=''>
-                <Link to="/">
+
+                <div >
                     <img src={dis}  width={620}/>
+                </div>
+            </div>
+
+            
+
+            <div className='flex space-x-20 bg-richblack-900 pl-24 pb-32 pr-24 '>
+                <div className='border-2 rounded-xl p-6'>
+                    <Link to="https://ndmindia.mha.gov.in/contact-us">
+                        <img className='ml-28' src={hospital}  width={100}/>
+                    </Link>
+                    <div className='text-richblack-5'>
+                        <h1 className='text-bold text-xl font-medium ml-12 mt-2 text-teal-600'>Hospital HelpLine Number</h1>
+                        <p className='text-justify text-sm mt-2'>It is a vital service connecting individuals
+                         to medical assistance and emergency support, ensuring prompt access to healthcare resources and guidance.</p>
+                    </div>
+                    
+                </div>
+                <div className='border-2 rounded-xl p-6'>
+                    <Link to="https://www.ndrf.gov.in/contact-us">
+                        <img className='ml-28' src={ndrf}  width={100}/>
+                    </Link>
+                    <div className='text-richblack-5'>
+                        <h1 className='text-bold text-xl font-medium mt-1 ml-4 text-teal-600'>National Disaster Response Force</h1>
+                        <p className='text-justify text-sm mt-2'>Instantly connect with trained responders who can provide real-time guidance
+                         and support. Whether it's a medical crisis, natural disaster, or any urgent situation.</p>
+                    </div>
+                </div>
+                <div className='border-2 rounded-xl p-5'>
+                    <button>
+                        <img className='ml-28' src={chatAgency}  width={100}/>
+                    </button>
+                    <div className='text-richblack-5'>
+                        <h1 className='text-bold text-xl font-medium mt-1 ml-20 text-teal-600'>Chat With Agencies</h1>
+                        <p className='text-justify text-sm mt-2'>Communicate directly with 
+                         NDRF and SDRF personnel. Share critical information, request assistance, 
+                         and stay informed about their deployment status.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex space-x-96 bg-richblack-900 pl-24 pb-32 h'>
+                <Link to="/">
+                    <img src={map}  width={1320}/>
                 </Link>
             </div>
 
-        </div>
+            <div className='flex space-x-80 bg-richblack-900 pl-56 pb-32 h'>
+                <div>
+                    <button>
+                        <img className='ml-4' src={navigation}  width={100}/>
+                    </button>
+                    <h1 className='text-richblack-5 text-bold text-xl  mt-2'>Navigation bar</h1>
+                </div>
+
+                <div>
+                    <button>
+                         <img className='ml-6' src={chatbot}  width={100}/>
+                    </button> 
+                    <h1 className='text-richblack-5 text-bold text-xl mt-2'>Chatbox Assistance</h1>
+                </div>
+
+                <div>
+                    <button>
+                        <img src={feedback}  width={80}/>
+                    </button>
+                    <h1 className='text-richblack-5 text-bold text-xl mt-1'>Feedback</h1>
+                </div>   
+                
+            </div>
+
+       </div>
+        
     )
 }
 

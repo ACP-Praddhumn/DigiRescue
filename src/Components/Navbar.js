@@ -8,7 +8,7 @@ const Navbar = (props) => {
     let setIsLoggedIn = props.setIsLoggedIn;
 
     return (
-        <div className='flex space-x-96  bg-richblack-900 '>
+        <div className='flex space-x-96 bg-richblack-900 '>
             <div className='ml-24'>
                 <h1 className='mt-12 text-3xl font-bold text-richblack-100' >DigiRescue</h1>
             </div>
@@ -19,7 +19,7 @@ const Navbar = (props) => {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/">About</Link>
+                        <Link to="/">Services</Link>
                     </li>
                     <li>
                         <Link to="/">Contact</Link>
