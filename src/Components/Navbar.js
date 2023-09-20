@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-
+import "../App.css"
 
 const Navbar = (props) => {
 
@@ -8,13 +8,13 @@ const Navbar = (props) => {
     let setIsLoggedIn = props.setIsLoggedIn;
 
     return (
-        <div className='flex space-x-96 bg-richblack-900 '>
+        <div className='flex space-x-96 bg-richblack-900 ' id='navbar'>
             <div className='ml-24'>
-                <h1 className='mt-12 text-3xl font-bold text-richblack-100' >DigiRescue</h1>
+                <h1 className=' text-3xl font-bold text-richblack-100' >DigiRescue</h1>
             </div>
             
             <nav>
-                <ul className='flex gap-8 mt-12 font-bold text-lg text-richblack-100'>
+                <ul className='flex gap-8  font-bold text-lg text-richblack-100'>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
@@ -27,7 +27,7 @@ const Navbar = (props) => {
                 </ul>
             </nav>
 
-            <div className='flex m5-3 mr-5 text-lg mt-9 gap-6'>
+            <div className='flex m5-3 mr-5 text-lg gap-6'>
                 { !isLoggedIn &&
                     <Link to="/login">
                         <button className='bg-richblack-800 text-richblack-100 py-[8px] 

@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from "react-router-dom"
 import {useState} from 'react'
 import UserForm from '../Components/UserForm'
 import AgencyForm from '../Components/AgencyForm'
@@ -9,7 +8,7 @@ const SignUp = () => {
     const [accountType, setAccountType] = useState("user");
 
     return (
-        <div className='bg-richblack-900  flex item-center justify-center  pt-10 '>
+        <div className='bg-richblack-900  flex item-center justify-center pt-20 '>
             <div className='text-richblack-100'>
 
                 <div className='flex bg-richblack-800 overflow-y-hidden p-1 gap-x-1 my-6 ml-24 rounded-full max-w-max'>
@@ -26,7 +25,7 @@ const SignUp = () => {
                     </button>
                 </div>
 
-            <form  className="flex max-w-sm flex-col gap-y-4 border-3">
+            <form  >
             {accountType === "user" ? (
             <div>
               <UserForm />

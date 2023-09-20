@@ -2,7 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
 html,
 body {
     overflow-x: hidden;
+}
+
+#map{
+    width: 80vw;
+    height: 80vh;
+}
+
+#mapping{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+#homeimg{
+    border-radius: 20px;
+}
+
+#homediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#userdata{
+    display: flex;
+    height: 77.5vh;
+}
+
+input{
+    border: 0px;
+}
+
+#agencyform{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
 }

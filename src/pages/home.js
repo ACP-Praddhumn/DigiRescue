@@ -1,6 +1,5 @@
 import React from 'react'
 import dis from "../assets/dis.jpg"
-import map from "../assets/map.png"
 import navigation from "../assets/navigation.png"
 import chatbot from "../assets/chatbot.png"
 import feedback from "../assets/feedback.png"
@@ -8,14 +7,14 @@ import hospital from "../assets/hospital.png"
 import chatAgency from "../assets/chatAgency.png"
 import ndrf from "../assets/ndrf.png"
 import {Link} from "react-router-dom"
-
+import "../App.css"
 const home = () => {
     return (
 
         <div>
-            <div className='bg-richblack-900 flex space-x-10 py-[140px]'>
+            <div className='bg-richblack-900 flex space-x-10 py-[140px]' id='homediv'>
 
-                <div className='text-richblack-100 max-w-2xl ml-24'>
+                <div className='text-richblack-100 max-w-2xl '>
                     <h3 className='font-bold text-3xl text-yellow-500'>Welcome to DigiRescue -</h3>
                     <h3 className='font-bold text-3xl text-orange-600 '>Your Digital Lifeline in Emergencies</h3>
 
@@ -34,16 +33,15 @@ const home = () => {
                 </div>
 
                 <div >
-                    <img src={dis}  width={620}/>
+                    <img src={dis}  width={620} id='homeimg'/>
                 </div>
             </div>
+     
 
-            
-
-            <div className='flex space-x-20 bg-richblack-900 pl-24 pb-32 pr-24 '>
-                <div className='border-2 rounded-xl p-6'>
+            <div id='box' className='flex space-x-20 bg-richblack-900 pl-24 pb-32 pr-24 '>
+                <div id='item' className='border-2 rounded-xl p-6'>
                     <Link to="https://ndmindia.mha.gov.in/contact-us">
-                        <img className='ml-28' src={hospital}  width={100}/>
+                        <img src={hospital}  width={100}/>
                     </Link>
                     <div className='text-richblack-5'>
                         <h1 className='text-bold text-xl font-medium ml-12 mt-2 text-teal-600'>Hospital HelpLine Number</h1>
@@ -52,9 +50,9 @@ const home = () => {
                     </div>
                     
                 </div>
-                <div className='border-2 rounded-xl p-6'>
+                <div id='item' className='border-2 rounded-xl p-6'>
                     <Link to="https://www.ndrf.gov.in/contact-us">
-                        <img className='ml-28' src={ndrf}  width={100}/>
+                        <img  src={ndrf}  width={100}/>
                     </Link>
                     <div className='text-richblack-5'>
                         <h1 className='text-bold text-xl font-medium mt-1 ml-4 text-teal-600'>National Disaster Response Force</h1>
@@ -62,9 +60,9 @@ const home = () => {
                          and support. Whether it's a medical crisis, natural disaster, or any urgent situation.</p>
                     </div>
                 </div>
-                <div className='border-2 rounded-xl p-5'>
+                <div id='item' className='border-2 rounded-xl p-5'>
                     <button>
-                        <img className='ml-28' src={chatAgency}  width={100}/>
+                        <img  src={chatAgency}  width={100}/>
                     </button>
                     <div className='text-richblack-5'>
                         <h1 className='text-bold text-xl font-medium mt-1 ml-20 text-teal-600'>Chat With Agencies</h1>
@@ -75,32 +73,32 @@ const home = () => {
                 </div>
             </div>
 
-            <div className='flex space-x-96 bg-richblack-900 pl-24 pb-32 h'>
+            <div className='flex space-x-96 bg-richblack-900 pb-32 h' id='mapping'>
                 <Link to="/">
-                    <img src={map}  width={1320}/>
+                <iframe id='map'  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14007.340021228727!2d77.45727849999999!3d28.63470675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1695188607210!5m2!1sen!2sin"></iframe>
                 </Link>
             </div>
-
-            <div className='flex space-x-80 bg-richblack-900 pl-56 pb-32 h'>
-                <div>
+        
+            <div id='box' className='flex space-x-80 bg-richblack-900 pb-32 '>
+                <div id='item'>
                     <button>
-                        <img className='ml-4' src={navigation}  width={100}/>
+                        <img src={navigation}  width={100}/>
                     </button>
                     <h1 className='text-richblack-5 text-bold text-xl  mt-2'>Navigation bar</h1>
                 </div>
 
-                <div>
+                <div id='item'>
                     <button>
-                         <img className='ml-6' src={chatbot}  width={100}/>
+                         <img  src={chatbot}  width={100}/>
                     </button> 
                     <h1 className='text-richblack-5 text-bold text-xl mt-2'>Chatbox Assistance</h1>
                 </div>
 
-                <div>
+                <div id='item'>
                     <button>
                         <img src={feedback}  width={80}/>
                     </button>
-                    <h1 className='text-richblack-5 text-bold text-xl mt-1'>Feedback</h1>
+                    <h1 className='text-richblack-5 text-bold text-xl ml-2'>Feedback</h1>
                 </div>   
                 
             </div>

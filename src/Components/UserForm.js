@@ -3,7 +3,7 @@ import {FcGoogle} from "react-icons/fc"
 
 const UserForm = () => {
   return (
-    <div className="flex max-w-sm flex-col gap-y-4 border-3">
+    <div id='userdata' className="flex max-w-sm flex-col gap-y-4 border-3">
          <div className="flex gap-x-4">
                 <label className='relative'>
                     <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
@@ -51,7 +51,7 @@ const UserForm = () => {
                     </p>
                     <input
                         required
-                        type="number"
+                        type="text"
                         name="number"
                         placeholder="Enter Phone Number"
                         className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"

@@ -1,11 +1,12 @@
 import React from 'react'
 import {FcGoogle} from "react-icons/fc"
+import '../App.css'
 
 const AgencyForm = () => {
     
   return (
     
-         <div className="flex max-w-sm flex-col gap-y-4 border-3 ">  
+         <div className="flex max-w-sm flex-col gap-y-4 border-3 " id='agencyform'>  
                 <label className='relative'>
                     <p className="mb-1 max-w-sm text-[0.875rem] leading-[1.375rem] text-richblack-5">
                         Organization Name <sup className="text-pink-200">*</sup>
@@ -67,7 +68,7 @@ const AgencyForm = () => {
                     </p>
                     <input
                         required
-                        type="number"
+                        type="text"
                         name="number"
                         placeholder="Enter Landline Number"
                         className="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"
@@ -214,24 +215,14 @@ const AgencyForm = () => {
            </div>
                 <button
                     type="submit"
-                    className="mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-900"
+                    className="mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] mb-5 font-medium text-richblack-900"
                     >
                     Create Account
                 </button>
 
-                <div className='flex w-full items-center my-4 gap-x-2'>
-                <div className='w-full h-[1px] bg-richblack-700'></div>
-                <p className='text-richblack-700 font-medium leading[1.375rem]'>
-                    OR
-                </p>
-                <div className='w-full h-[1px] bg-richblack-700'></div>
-            </div>
+            
 
-            <button className='w-full flex justify-center items-center rounded-[8px] font-medium text-richblack-100
-            border border-richblack-700 px-[12px] py-[8px] gap-x-2 mt-1 mb-5'>
-                <FcGoogle/>
-                <p>Sign Up with Google</p>
-            </button>
+            
             
     </div>
   )
