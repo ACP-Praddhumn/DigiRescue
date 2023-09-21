@@ -8,18 +8,21 @@ const Navbar = (props) => {
     let setIsLoggedIn = props.setIsLoggedIn;
 
     return (
-        <div className='flex space-x-96 bg-richblack-900 ' id='navbar'>
-            <div className='ml-24'>
+        <div className='flex space-x-96 bg-gray-700 w-100' id='navbar' >
+            <div className='ml-20'>
                 <h1 className=' text-3xl font-bold text-richblack-100' >DigiRescue</h1>
             </div>
             
             <nav>
-                <ul className='flex gap-8  font-bold text-lg text-richblack-100'>
+                <ul className='flex gap-7  font-bold text-lg text-richblack-100'>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/">Services</Link>
+                        <Link to="/donation">Donation</Link>
+                    </li>
+                    <li>
+                        <Link to="/Emergencies">Services</Link>
                     </li>
                     <li>
                         <Link to="/">Contact</Link>
@@ -27,7 +30,7 @@ const Navbar = (props) => {
                 </ul>
             </nav>
 
-            <div className='flex m5-3 mr-5 text-lg gap-6'>
+            <div className='flex m5-2 mr-2 text-lg gap-2'>
                 { !isLoggedIn &&
                     <Link to="/login">
                         <button className='bg-richblack-800 text-richblack-100 py-[8px] 
@@ -39,7 +42,7 @@ const Navbar = (props) => {
                 {   !isLoggedIn &&
                     <Link to="/signUp">
                         <button className='bg-richblack-800 text-richblack-100 py-[8px] 
-                    px-[12px] rounded-[8px] border border-richblack-700'>
+                    px-[12px] mr-1 rounded-[8px] border border-richblack-700'>
                             Sign Up
                         </button>
                     </Link>

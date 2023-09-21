@@ -69,6 +69,31 @@ input{
 
 #agencyform{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto  auto;
 
+}
+#fixed{
+    display: inline-flex;
+}
+.dial{
+    display: block;
+    float: left;
+}
+#call{
+    position: fixed;
+    border-radius: 10%;
+    bottom: 15vh;
+    float: right;
+    display: flex;
+    right: 0;
+    background-color: red;
+    color: black;
+    width: 6vw;
+    height: 10vh;
+    align-items: top;
+    padding: 0.3vh;
+    justify-self: center;
+}
+#svg{
+    color: black;
 }

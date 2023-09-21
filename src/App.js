@@ -7,7 +7,9 @@ import Login from "./pages/login";
 import SignUp from "./pages/SignUp";
 import { ThemeProvider } from 'styled-components';
 import chat from './chatbot.png'
-
+import Dial112 from "./Components/Dial112";
+import DisasterGiftBoxPage from "./Components/Donation";
+import EmergencyContacts from "./Components/Emergency";
 const theme = {
   background: 'white',
   headerBgColor: '#0F3789',
@@ -71,7 +73,7 @@ function App() {
     <div>
 
       <Navbar/>
-      
+      <Dial112/>
       <Routes>
 
         <Route path="/" element={<Home/>} />
@@ -80,10 +82,10 @@ function App() {
 
         <Route path="/signUp" element={<SignUp/>} />
 
+        <Route path="/donation" element={<DisasterGiftBoxPage/>}/>
+        <Route path="/Emergencies" element={<EmergencyContacts/>}/>
       </Routes>
-      <div className="banner">
-        
-      </div>
+     
       <ThemeProvider theme={theme}>
                 <ChatBot
  
