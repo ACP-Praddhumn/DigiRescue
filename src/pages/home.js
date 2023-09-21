@@ -74,9 +74,7 @@ const home = () => {
             </div>
 
             <div className='flex space-x-96 bg-richblack-900 pb-32 h' id='mapping'>
-                <Link to="/">
-                <iframe id='map'  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14007.340021228727!2d77.45727849999999!3d28.63470675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1695188607210!5m2!1sen!2sin"></iframe>
-                </Link>
+                <iframe width="1300" height="600" frameborder="0" scrolling="no" src="https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=20.5937&lon=78.9629&zoom=5"></iframe>
             </div>
         
             <div id='box' className='flex space-x-80 bg-richblack-900 pb-32 '>

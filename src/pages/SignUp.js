@@ -25,7 +25,7 @@ const SignUp = () => {
                     </button>
                 </div>
 
-            <form  >
+            <form>
             {accountType === "user" ? (
             <div>
               <UserForm />

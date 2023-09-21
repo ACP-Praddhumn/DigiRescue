@@ -6,7 +6,7 @@ const AgencyForm = () => {
     
   return (
     
-         <div className="flex max-w-sm flex-col gap-y-4 border-3 " id='agencyform'>  
+         <div className=" " id='agencyform'>  
                 <label className='relative'>
                     <p className="mb-1 max-w-sm text-[0.875rem] leading-[1.375rem] text-richblack-5">
                         Organization Name <sup className="text-pink-200">*</sup>
@@ -173,6 +173,34 @@ const AgencyForm = () => {
 
                 <label className='relative'>
                     <p className="mb-1 max-w-sm text-[0.875rem] leading-[1.375rem] text-richblack-5">
+                    Survival Kit <sup className="text-pink-200">*</sup>
+                    </p>
+                    
+                    <div>
+                        <input
+                            required
+                            type="radio"
+                            name="survival"
+                            placeholder="Enter Survival Kit"
+                            
+                        />
+                        <span>Yes</span>
+                    </div>
+                    <div>
+                        <input
+                            required
+                            type="radio"
+                            name="survival"
+                            placeholder="Enter Survival Kit"
+                            
+                        />
+                        <span>No</span>
+                    </div>
+                    
+                </label>
+
+                <label className='relative'>
+                    <p className="mb-1 max-w-sm text-[0.875rem] leading-[1.375rem] text-richblack-5">
                         Address <sup className="text-pink-200">*</sup>
                     </p>
                     <input
@@ -218,12 +246,7 @@ const AgencyForm = () => {
                     className="mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] mb-5 font-medium text-richblack-900"
                     >
                     Create Account
-                </button>
-
-            
-
-            
-            
+                </button>        
     </div>
   )
 }
