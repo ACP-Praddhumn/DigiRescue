@@ -12,7 +12,7 @@ const home = () => {
     return (
 
         <div>
-            <div className='bg-richblack-900 flex space-x-10 py-[140px]' id='homediv'>
+            <div className='bg-richblack-900 py-[140px]' id='homediv'>
 
                 <div className='text-richblack-100 max-w-2xl '>
                     <h3 className='font-bold text-3xl text-yellow-500'>Welcome to DigiRescue -</h3>
@@ -33,7 +33,7 @@ const home = () => {
                 </div>
 
                 <div >
-                    <img src={dis} width={620} id='homeimg' />
+                    <img src={dis} width={480} id='homeimg' />
                 </div>
             </div>
 
