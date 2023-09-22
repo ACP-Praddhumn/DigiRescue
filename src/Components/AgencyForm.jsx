@@ -48,7 +48,7 @@ const AgencyForm = () => {
                     <div className='bg-slate-700 w-full h-[3px] absolute'></div>
                 </label>
 
-                <label className='relative'>
+                <label >
                     <p className="mb-1 max-w-sm text-[0.875rem] leading-[1.375rem] text-richblack-5">
                         I'd Number <sup className="text-pink-200">*</sup>
                     </p>
