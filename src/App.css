@@ -83,12 +83,14 @@ input{
     position: fixed;
     border-radius: 10%;
     bottom: 15vh;
+    margin-top: 2px;
     float: right;
     display: flex;
     right: 0;
-    background-color: red;
+    background-color: rgb(122, 155, 227);
+    z-index: 2;
     color: black;
-    width: 6vw;
+    width: 5%;
     height: 10vh;
     align-items: top;
     padding: 0.3vh;

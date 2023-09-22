@@ -96,7 +96,9 @@ const home = () => {
                     <button>
                         <img src={feedback} width={80} />
                     </button>
+                    <a href="/shelter">
                     <h1 className='text-richblack-5 text-bold text-xl ml-2'>Feedback</h1>
+                    </a>
                 </div>
             </div>
 
