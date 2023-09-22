@@ -16,7 +16,7 @@ const emergencyContacts = [
 
 const EmergencyContacts = () => {
   return (
-    <div className="mt-14">
+    <div className="">
       {/* <Navbar /> */}
       <Container fluid className="emergency-contacts-container py-5">
         <h2 style={{ color: "#1a2a6c" }}>Emergency contacts</h2>
