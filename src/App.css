@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    transition: all 0.8s ease-in 0s;
 }
 html,
 body {
@@ -34,7 +34,7 @@ body {
     flex-direction: row;
     align-items: center;
     height: 10vh;
-    width: 100vw;
+    z-index: 1;
 }
 
 #homeimg{
@@ -75,7 +75,11 @@ input{
 #agencyform{
     display: grid;
     grid-template-columns: auto  auto;
-
+    column-gap: 200px;
+    row-gap: 20px;
+}
+.h-\[3px\]{
+    height: 0px;
 }
 #fixed{
     display: inline-flex;
@@ -87,18 +91,27 @@ input{
 #call{
     position: fixed;
     border-radius: 10%;
-    bottom: 15vh;
+    bottom: 50vh;
     float: right;
     display: flex;
     right: 0;
-    background-color: red;
-    color: black;
+    color: white;
     width: 6vw;
     height: 10vh;
     align-items: top;
     padding: 0.3vh;
     justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #svg{
-    color: black;
+    color: white;
+}
+img:hover{
+    transform: scale(1.1);
+}
+img{
+    transition: all 0.3s linear 0s;
 }
