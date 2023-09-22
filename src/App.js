@@ -11,6 +11,8 @@ import Dial112 from "./Components/Dial112";
 import DisasterGiftBoxPage from "./Components/Donation";
 import EmergencyContacts from "./Components/Emergency";
 import MarkersMap from "./pages/Shelter";
+
+
 const theme = {
   background: 'white',
   headerBgColor: '#0F3789',
@@ -69,6 +71,7 @@ const steps = [
 ];
 
 function App() {
+  
 
   return(
     <div>
@@ -87,7 +90,7 @@ function App() {
         <Route path="/Emergencies" element={<EmergencyContacts/>}/>
         <Route path="/shelter" element={<MarkersMap/>}/>
       </Routes>
-     
+      
       <ThemeProvider theme={theme}>
                 <ChatBot
  
